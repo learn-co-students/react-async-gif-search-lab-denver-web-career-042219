@@ -5,7 +5,7 @@ const GifList = (props) => {
         <ul>
             {props.gifs.map(gif  => {
                 return(
-                    <li><img src={gif.images.original.url}></img></li>
+                    <li key={gif.id} ><img src={gif.images.original.url}></img></li>
                 )
             })}
         </ul>
